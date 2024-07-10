@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # Load URLs from JSON file
-with open('/home/ozaki_vm/ideabte_scraping/Get_URL_list/URL_json_output/debate_urls.json', 'r') as f:
+with open('ideabte_scraping/Get_URL_list/URL_json_output/debate_urls.json', 'r') as f:
     json_urls = json.load(f)
 
 # Function to get sub-page URLs from a main theme URL
@@ -29,7 +29,7 @@ for theme_url in json_urls:
     all_debate_topic_urls[theme_name] = get_debate_topic_urls(theme_url)
 
 # Output the results
-with open('/home/ozaki_vm/ideabte_scraping/Get_URL_list/output/debate_topic_urls.json', 'w') as f:
+with open('ideabte_scraping/Get_URL_list/output/debate_topic_urls.json', 'w') as f:
     json.dump(all_debate_topic_urls, f, indent=4)
 
 print("Debate topic URLs have been saved to debate_topic_urls.json")
