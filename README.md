@@ -6,19 +6,10 @@
 
 ## 使用方法
 
-### 1. URLリストの取得
 
-まず、Idebateサイトからデータを収集するためのURLリストを取得します。
+###  データのスクレイピング
 
-```bash
-python Get_URL_list/get_url_list.py
-```
-
-このコマンドを実行すると、`Get_URL_list/URL_json_output`ディレクトリに`debate_urls.json`というファイルが生成されます。
-
-### 2. データのスクレイピング
-
-次に、収集したURLリストを使ってデータをスクレイピングします。
+収集したURLリストを使ってデータをスクレイピングします。
 
 ```bash
 sh scraping_idebate/run_main.sh
