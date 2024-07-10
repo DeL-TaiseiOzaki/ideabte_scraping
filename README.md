@@ -1,4 +1,3 @@
-```markdown
 # ideabte_scraping
 
 ## 概要
