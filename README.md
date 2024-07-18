@@ -1,4 +1,4 @@
-# ideabte_scraping
+# idebate_scraping
 
 ## 概要
 
